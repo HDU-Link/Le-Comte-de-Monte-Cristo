@@ -65,7 +65,7 @@ def dynamics_copy(positions, velocities, dt, num_steps):
 # ==================== 初始位置和速度 ====================
 angles = np.linspace(0, 2 * np.pi, N)
 positions = np.column_stack([np.cos(angles), np.sin(angles)]) / 4 * R
-velocities = np.column_stack([np.cos(angles), np.sin(angles)])
+velocities = np.column_stack([-np.sin(angles), np.cos(angles)])
 # ==================== 求解 ====================
 dt = 0.01
 pos_history, vel_history, max_vel_history, max_force_history = dynamics(positions, velocities, dt, int(50 / dt))
@@ -83,7 +83,7 @@ plt.rc('font', family='serif')
 ax1 = fig.add_subplot(2, 2, 1, projection='3d')
 t_steps = np.arange(0, int(30/dt)) * dt
 ax1.quiver3D(positions[:, 0], positions[:, 1], np.zeros(N),
-            velocities[:, 0], velocities[:, 1], np.zeros(N), color='r', length=0.05, linewidth=0.5)
+            velocities[:, 0], velocities[:, 1], np.zeros(N), color='#D95319', length=0.05, linewidth=0.5)
 ax1.quiver3D(pos_history[-1][:, 0], pos_history[-1][:, 1], np.ones(N)*30,
            vel_history[-1][:, 0], vel_history[-1][:, 1], np.zeros(N)*30, color='k', length=0.05, linewidth=0.5)
 x_traj = [pos_history[step][0, 0] for step in range(0, int(30/dt), 10)]
