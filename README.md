@@ -38,9 +38,7 @@ where:
 
 ## Code Descriptions
 
-### 1. Jurdjevic-Quinn Feedback Control (`1_Jurdjevic-Quinn_feedback_control.py`)
-
-**Corresponds to:** Figure 1 in the paper
+### 1. Jurdjevic-Quinn Feedback Control
 
 This script implements the Jurdjevic-Quinn stabilization strategy (Step 1.1 in the paper) using a Lyapunov-based feedback control to steer the system toward $\Omega_\epsilon = \{(x,v): v=0, \|F(x)\| \leq \epsilon\}$.
 
@@ -62,9 +60,7 @@ u_i(v_i) =
 \end{cases}
 $$
 
-### 2. Flocking Transition (`2_Flocking_transition.py`)
-
-**Corresponds to:** Figure 2 in the paper
+### 2. Flocking Transition
 
 This script demonstrates quasi-static deformation (Step 3.2 in the paper) to smoothly transition a flock from one direction to another.
 
@@ -74,9 +70,7 @@ This script demonstrates quasi-static deformation (Step 3.2 in the paper) to smo
 - Maintains constant speed $\sqrt{\alpha/\beta}$ throughout the transition
 - Polar plot shows the smooth angular evolution of the flock
 
-### 3. Mill Ring Stability (`3_Mill_ring_stability.py`)
-
-**Corresponds to:** Figure 3 in the paper
+### 3. Mill Ring Stability
 
 This script analyzes the stability of mill ring solutions for power-law potentials: $U(s) = |s|^a/a - |s|^b/b$.
 
@@ -92,9 +86,7 @@ $$
 \sum_{p=1}^{N-1} \sin\left(\frac{p\pi}{N}\right) \tilde{U}'\left(2R\sin\left(\frac{p\pi}{N}\right)\right) = 0, \quad \tilde{U}(r) = U(r) - \omega^2\frac{r^2}{2}
 $$
 
-### 4. Stabilization Toward Mill Ring (`4_Stabilization_towards_mill_ring.py`)
-
-**Corresponds to:** Figure 4 in the paper
+### 4. Stabilization Toward Mill Ring
 
 This script implements an instantaneous optimal feedback control to stabilize an arbitrary configuration toward a mill ring.
 
@@ -113,9 +105,7 @@ $$
 \min_u \sum_{i=1}^N \left|v_i - \sqrt{\frac{\alpha}{\beta}}\frac{x_i^\perp}{|x_i|}\right| + (|x_i - x_m|^2 - R_m^2)^2 + \lambda_1|u| + \lambda_2|u|^2
 $$
 
-### 5. Mill to Flock Transition (`5_Mill_to_flock.py`)
-
-**Corresponds to:** Figure 5 in the paper
+### 5. Mill to Flock Transition
 
 This script demonstrates controlled transition from a stable mill configuration to a flocking configuration.
 
