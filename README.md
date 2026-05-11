@@ -1,4 +1,4 @@
-# GitHub Repository: Controlling Swarms Toward Flocks and Mills
+# Controlling Swarms Toward Flocks and Mills
 
 ## Repository Overview
 
