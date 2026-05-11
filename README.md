@@ -115,35 +115,6 @@ This script demonstrates controlled transition from a stable mill configuration 
 - Target: constant velocity $\bar{v} = (\sqrt{\alpha/\beta}, 0)$ and desired flock radius $R_f$
 - Shows evolution of swarm radius from mill radius to flock radius
 
-## Key Parameters
-
-| Parameter | Description | Typical Value |
-|-----------|-------------|---------------|
-| $\alpha$ | Self-propulsion coefficient | 2.0 - 10.0 |
-| $\beta$ | Friction/damping coefficient | 1.5 - 3.0 |
-| $M$ | Control bound | > $\sqrt{4\alpha^3/27\beta}$ |
-| $N$ | Number of agents | 20 - 200 |
-| $C, p, l$ | Quasi-Morse potential parameters | 0.6, 1.5, 0.5 |
-| $a, b$ | Power-law potential exponents | 4, 1 |
-
-## Control Strategies Summary
-
-| Strategy | Purpose | Key Technique |
-|----------|---------|---------------|
-| Jurdjevic-Quinn | Reach $\Omega_\epsilon$ | Lyapunov-based feedback |
-| Local controllability | Fine maneuvering near equilibrium | Control linearization |
-| Quasi-static deformation | Transition between flocks | Slowly varying path tracking |
-| Instantaneous optimal | Stabilize to mill | Short-horizon optimization |
-
-## Theoretical Guarantees
-
-From the paper, with sufficient control bound $M$:
-
-- **If $M > M_{\alpha,\beta}$**: System can be steered to any flock configuration
-- **If $M > \max(M_{\alpha,\beta}, M_F)$**: System can be steered to any flock or mill configuration
-
-where $M_{\alpha,\beta} = \sqrt{4\alpha^3/27\beta}$ and $M_F = \sup_{r>0}|U'(r)|$.
-
 ## References
 
 - Carrillo, J. A., Kalise, D., Rossi, F., & Trélat, E. (2022). Controlling swarms toward flocks and mills. *SIAM Journal on Control and Optimization*, 60(3), 1863-1891. [DOI: 10.1137/21M1404314](https://doi.org/10.1137/21M1404314)
