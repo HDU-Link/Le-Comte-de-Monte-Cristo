@@ -1,10 +1,6 @@
 # Controlling Swarms Toward Flocks and Mills
 
-## Repository Overview
-
-This repository contains Python implementations of the control strategies presented in the paper **"Controlling swarms toward flocks and mills"** by José A. Carrillo, Dante Kalise, Francesco Rossi, and Emmanuel Trélat (SIAM Journal on Applied Mathematics, 2022).
-
-The paper demonstrates how constrained feedback controls can steer self-propelled particle swarms from arbitrary initial configurations to desired collective behaviors, including **flocks** (collective motion with aligned velocities) and **mills** (rotating ring formations). The implementations reproduce the five key numerical experiments from the paper, showcasing different control strategies:
+This repository contains Python implementations of the control strategies presented in the paper **"Controlling swarms toward flocks and mills"** by José A. Carrillo, Dante Kalise, Francesco Rossi, and Emmanuel Trélat. The paper demonstrates how constrained feedback controls can steer self-propelled particle swarms from arbitrary initial configurations to desired collective behaviors, including **flocks** (collective motion with aligned velocities) and **mills** (rotating ring formations). The implementations reproduce the five key numerical experiments from the paper, showcasing different control strategies:
 
 1. **Jurdjevic-Quinn stabilization** - Steering arbitrary initial configurations to a neighborhood of equilibrium
 2. **Quasi-static deformation** - Smoothly transitioning between flocks with different directions
@@ -125,24 +121,6 @@ This script demonstrates controlled transition from a stable mill configuration 
 - Uses optimal instantaneous feedback to steer toward flocking regime
 - Target: constant velocity \( \bar{v} = (\sqrt{\alpha/\beta}, 0) \) and desired flock radius \( R_f \)
 - Shows evolution of swarm radius from mill radius to flock radius
-
-## Dependencies
-
-```bash
-pip install numpy scipy matplotlib
-```
-
-## Usage
-
-Run any script individually:
-
-```bash
-python 1_Jurdjevic-Quinn_feedback_control.py
-python 2_Flocking_transition.py
-python 3_Mill_ring_stability.py
-python 4_Stabilization_towards_mill_ring.py
-python 5_Mill_to_flock.py
-```
 
 ## Key Parameters
 
