@@ -28,11 +28,12 @@ where:
 ## Repository Structure
 
 ```
-├── 1_Jurdjevic-Quinn_feedback_control.py    # Figure 1: JQ stabilization
-├── 2_Flocking_transition.py                 # Figure 2: Flock direction change
-├── 3_Mill_ring_stability.py                 # Figure 3: Mill ring stability analysis
-├── 4_Stabilization_towards_mill_ring.py     # Figure 4: Controlled mill formation
-├── 5_Mill_to_flock.py                       # Figure 5: Mill to flock transition
+├── 1 Jurdjevic-Quinn feedback control.py             # Figure 1: JQ stabilization
+├── 2 Flocking transition.py                          # Figure 2: Flock direction change
+├── 3 Mill ring stability.py                          # Figure 3: Mill ring stability analysis
+├── 4 Stabilization towards mill_ring.py              # Figure 4: Controlled mill formation
+├── 5 Mill to flock.py                                # Figure 5: Mill to flock transition
+├── Controlling swarms toward flocks and mills.ipynb  # Main Jupyter notebook
 └── README.md
 ```
 
