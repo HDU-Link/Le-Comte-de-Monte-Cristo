@@ -34,6 +34,7 @@ where:
 ├── 4 Stabilization towards mill_ring.py              # Figure 4: Controlled mill formation
 ├── 5 Mill to flock.py                                # Figure 5: Mill to flock transition
 ├── Controlling swarms toward flocks and mills.ipynb  # Main Jupyter notebook
+├── Project Overview.php                              # Overview of the project
 └── README.md
 ```
 
